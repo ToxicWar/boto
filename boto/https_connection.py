@@ -83,7 +83,7 @@ def ValidateCertificateHostname(cert, hostname):
     return False
 
 
-class CertValidatingHTTPSConnection(http_client.HTTPConnection):
+class CertValidatingHTTPSConnection(http_client.HTTPSConnection):
     """An HTTPConnection that connects over SSL and validates certificates."""
 
     default_port = http_client.HTTPS_PORT
